@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>のこのこ動物病院</title>
+    <meta name="descricription" content="那須塩原市にある動物病院です。皆さまの大切なペットたちの健康と幸せを守るために全力でサポートいたします。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div id="logo"><a href="home.html"><img src="image/logo.png" alt="のこのこ動物病院"></a></div>
+      <!-- PC用ナビゲーション -->
+      <nav id="nav-pc">
+        <ul class="list">
+          <li><a href="home.html">当院について</a></li>
+          <li><a href="staff.html">スタッフ紹介</a></li>
+          <li><a href="price.html">料金表</a></li>
+          <span><li><a href="question.html">よくあるご質問</a></li></span>
+        </ul>
+      </nav> 
+
+     
+     <!-- スマホ用ナビゲーション -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="home.html">のこのこ動物病院</a></li>
+          <li><a href="home.html">当院について</a></li>
+          <li><a href="staff.html">スタッフ紹介</a></li>
+          <li><a href="price.html">料金表</a></li>
+          <li><a href="question.html">よくあるご質問</a></li>
+        </ul>
+      </nav>
+
+      <div class="overlay" id="overlay"></div>
+
+    </header>
+    
+    
+    <main>
+      <!-- 当院の獣医師紹介 -->
+      <div id="sub-title">
+        <h2>スタッフ紹介</h2>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">          
+            <li><a href="home.html"><img src="image/breadcrumb-icon.png" alt="TOPアイコン">ホーム</a></li>
+            <li>スタッフ紹介</li>
+          </ol>
+        </nav>
+      </div>
+      
+
+      <!-- 獣医師紹介 -->
+      <section id="veterinarian">
+        <div class="base_width">
+          <h1 class="h1">獣医師紹介</h1>
+          <div id="vet">
+            <div id="vet-img"><img src="image/vet.jpeg" alt="当院について"></div>
+            <div class="career">
+              <p class="name">医院長・獣医師<span>高橋 誠</span></p>
+              <p class="career-list">【経歴】</p>
+              <ul>
+                <li>○○大学獣医学部獣医学科卒業</li>
+                <li>東京の動物病院勤務</li>
+                <li>2020年 当院開業</li>
+              </ul>
+            </div>     
+          </div>     
+        </div>     
+      </section>  
+    </main>
+
+
+    <!-- フッター -->
+        <footer>
+          <div><p class="footer-logo">のこのこ動物病院<br><span class="footer-br">〒329-1116 栃木県宇都宮市立伏町宇都宮グリーンタウン</span>
+            <br><a href="https://maps.app.goo.gl/yWrNWB6x3E9Pw4bR8"><span class="footer-br">➤Google map</span></a></p>
+          </div>
+          
+          <!-- 診療日 -->
+          <div id="table-flex2">
+            <div class="back2">
+              <table class="table">
+                <tr>
+                  <th>診療時間</th>
+                  <th>月</th>
+                  <th>火</th>
+                  <th>水</th>
+                  <th>木</th>
+                  <th>金</th>
+                  <th>土</th>
+                  <th>日</th>
+                </tr>
+                
+                <tr>
+                  <th>9:00~11:30</th>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>×</td>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>×</td>
+                </tr>
+                
+                <tr>
+                  <th>15:00~18:30</th>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>×</td>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>×</td>
+                </tr>
+              </table>
+              <p class="time-p">診療時間
+              <span class="font-1">9時00分~11時30分/15時00分~18時30分</span><br>
+              <span class="font-2">※午前最終受付11時00分/午後最終受付18時30分</span></p>
+              <p class="time-p">休診日<span class="font-3">水曜日・日曜日</span></p>
+              <p class="car-font">駐車場 <span class="blank">8台</span> 完備</p>
+            </div>
+            <!-- Web予約 -->
+            <div>
+              <div class="border"><p><span class="small-p">ご予約/お問い合わせ</span><br><span class="big-p">080-2212-8358</span></p></div>
+              <div class="border"><p>WEB予約</p></div>
+            </div>
+          </div>
+
+          <!-- フッターメニュー -->
+          <div id="footer-menu">
+            <ul class="footer-nav">
+              <li class="line"><a href="home.html">当院について</a></li>
+              <li><a href="staff.html">スタッフ紹介</a></li>
+              <li><a href="price.html">料金表</a></li>
+              <span><li><a href="question.html">よくあるご質問</a></li></span>
+            </ul>
+          </div>
+          <!-- コピーライト -->
+          <p class="copyright">&copy;のこのこ動物病院</p>
+        </footer>
+        <script src="script.js"></script>
+  </body>
+</html>

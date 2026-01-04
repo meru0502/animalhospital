@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>のこのこ動物病院</title>
+    <meta name="descricription" content="那須塩原市にある動物病院です。皆さまの大切なペットたちの健康と幸せを守るために全力でサポートいたします。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  
+  <body>
+    <header>
+      <div id="logo"><a href="home.html"><img src="image/logo.png" alt="のこのこ動物病院"></a></div>
+      <!-- PC用ナビゲーション -->
+      <nav id="nav-pc">
+        <ul class="list">
+          <li><a href="home.html">当院について</a></li>
+          <li><a href="staff.html">スタッフ紹介</a></li>
+          <li><a href="price.html">料金表</a></li>
+          <span><li><a href="question.html">よくあるご質問</a></li></span>
+        </ul>
+      </nav> 
+
+     
+     <!-- スマホ用ナビゲーション -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="home.html">のこのこ動物病院</a></li>
+          <li><a href="home.html">当院について</a></li>
+          <li><a href="staff.html">スタッフ紹介</a></li>
+          <li><a href="price.html">料金表</a></li>
+          <li><a href="question.html">よくあるご質問</a></li>
+        </ul>
+      </nav>
+
+      <div class="overlay" id="overlay"></div>
+
+    </header>
+
+    
+    <main>
+      <!-- メインビュー -->
+      <div id="home">
+        <img src="image/slide1.jpeg" alt="病院外観画像">
+      </div>
+      
+      <!-- 当院について -->
+      <section id="explain">
+        <div class="base_width">
+          <h1 class="h1">当院について</h1>
+          <div id="explain-flex">
+            <div id="explain-img"><img src="image/explain.jpeg" alt="当院について"></div>
+            <div class="sentence">
+              <h3>人と動物が、安心して毎日を過ごせるように。</h3>
+              <p>動物たちとご家族が、心身ともに健やかな毎日を送れるよう、<br>私たちは日々の健康管理から生活面のご相談まで<br>幅広くお手伝いしていきます。</p>
+              <div class="span"><p>動物たちとご家族が、心身ともに健やかな毎日を送れるよう、<br>私たちは日々の健康管理から生活面のご相談まで<br>幅広くお手伝いしていきます。</p></div>
+            </div>     
+          </div>     
+        </div>     
+      </section>  
+      
+      
+      
+      <!-- 診療対象動物・診療内容 -->
+      <section id="medical">
+        <div class="base_width">
+          <div class="back">
+            <div id="medical-treatment-flex">
+              <div class="medical-treatment">
+                <div class="abjuct"><h2>診療対象動物</h2></div>
+                <div class="animal-flex">
+                  <div class="animal">
+                    <p><strong>犬</strong></p>
+                    <img src="image/dog.jpeg" alt="犬">
+                  </div>
+
+                  <div class="animal">
+                    <p><strong>猫</strong></p>
+                    <img src="image/cat.jpeg" alt="猫">
+                  </div>
+
+                  <div class="animal">
+                    <p><strong>うさぎ</strong></p>
+                    <img src="image/rabbit.jpeg" alt="うさぎ">
+                  </div>
+                </div>
+
+                <div class="animal-flex">
+                  <div class="animal">
+                    <p><strong>アヒル</strong></p>
+                    <img src="image/duck.jpeg" alt="アヒル">
+                  </div>
+
+                  <div class="animal">
+                    <p><strong>カエル</strong></p>
+                    <img src="image/frog.jpeg" alt="カエル">
+                  </div>
+
+                  <div class="animal">
+                    <p><strong>ヘビ</strong></p>
+                    <img src="image/snake.jpeg" alt="ヘビ"> 
+                  </div>            
+                </div>
+              </div>
+              
+              <div class="medical-treatment">
+                <div class="abjuct"><h2>診療内容</h2></div>
+                <div id="details">
+                  <ul>
+                    <li>予防医療（ワクチン、避妊去勢）</li>
+                    <li>一般診療(内科/外科)</li>
+                  </ul>
+                </div>                
+              </div>
+            </div>
+          </div>     
+        </div>
+      </section>
+      
+      
+      <!-- スタッフ紹介・よくある質問 -->
+      <section id="staff-question">
+        <div class="base_width">
+          <div id="else-flex">
+            <div class="box">
+              <img src="image/staff.jpeg" alt="スタッフ紹介">
+              <p><a href="staff.html">スタッフ紹介</a></p>
+            </div>     
+            
+            <div class="box">
+              <img src="image/slide2.jpeg" alt="料金表">
+              <p><a href="price.html">料金表</a></p>
+            </div>
+            
+            <div class="box">
+              <img src="image/question.jpeg" alt="よくあるご質問">
+              <p><a href="question.html">よくある質問</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      <!-- 診療日のお知らせ -->
+      <section id="notice">
+        <div class="base_width">
+          <h1 class="h1">診療日のお知らせ</h1>
+          <div id="table-flex">
+            <div class="back2">
+              <table class="table">
+                <tr>
+                  <th>診療時間</th>
+                  <th>月</th>
+                  <th>火</th>
+                  <th>水</th>
+                  <th>木</th>
+                  <th>金</th>
+                  <th>土</th>
+                  <th>日</th>
+                </tr>
+                
+                <tr>
+                  <th>9:00~11:30</th>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>×</td>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>×</td>
+                </tr>
+                
+                <tr>
+                  <th>15:00~18:30</th>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>×</td>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>×</td>
+                </tr>
+              </table>
+              <p class="time-p">診療時間
+                <span class="font-1">9時00分~11時30分/15時00分~18時30分</span><br>
+                <span class="font-2">※午前最終受付11時00分/午後最終受付18時30分</span></p>
+                <p class="time-p">休診日<span class="font-3">水曜日・日曜日</span></p>
+                <p class="car-font">駐車場 <span class="blank">8台</span> 完備</p>
+              </div>
+              <div id="parking-img"><img src="image/car.jpeg" alt=駐車場画像></div>              
+            </div>       
+          </div>
+        </section>
+        
+        
+        <!-- アクセス -->
+        <section id="map">
+          <div class="base_width"><!-- 幅の調整 -->
+            <h1 class="h1">アクセス</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12805.971944767492!2d139.8682981111492!3d36.638589106694724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601f65a466585c6b%3A0x4f36c533d3c1d89e!2z5a6H6YO95a6u44Kw44Oq44O844Oz44K_44Km44Oz5YWl5Y-j!5e0!3m2!1sja!2sjp!4v1752398359273!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </section>
+    </main>
+        
+        
+        <!-- フッター -->
+        <footer>
+          <div claas="footer-p"><p class="footer-logo">のこのこ動物病院<br><span class="footer-br">〒329-1116 栃木県宇都宮市立伏町宇都宮グリーンタウン</span>
+            <br><a href="https://maps.app.goo.gl/yWrNWB6x3E9Pw4bR8"><span class="footer-br">➤Google map</span></a></p>
+          </div>
+          
+          <!-- 診療日 -->
+          <div id="table-flex2">
+            <div class="back2">
+              <table class="table">
+                <tr>
+                  <th>診療時間</th>
+                  <th>月</th>
+                  <th>火</th>
+                  <th>水</th>
+                  <th>木</th>
+                  <th>金</th>
+                  <th>土</th>
+                  <th>日</th>
+                </tr>
+                
+                <tr>
+                  <th>9:00~11:30</th>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>×</td>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>×</td>
+                </tr>
+                
+                <tr>
+                  <th>15:00~18:30</th>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>×</td>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>×</td>
+                </tr>
+              </table>
+              <p class="time-p">診療時間
+              <span class="font-1">9時00分~11時30分/15時00分~18時30分</span><br>
+              <span class="font-2">※午前最終受付11時00分/午後最終受付18時30分</span></p>
+              <p class="time-p">休診日<span class="font-3">水曜日・日曜日</span></p>
+              <p class="car-font">駐車場 <span class="blank">8台</span> 完備</p>
+            </div>
+            <!-- Web予約 -->
+            <div>
+              <div class="border"><p><span class="small-p">ご予約/お問い合わせ</span><br><span class="big-p">080-2212-8358</span></p></div>
+              <div class="border"><p>WEB予約</p></div>
+            </div>
+          </div>
+
+          <!-- フッターメニュー -->
+          <div id="footer-menu">
+            <ul class="footer-nav">
+              <li class="line"><a href="home.html">当院について</a></li>
+              <li><a href="staff.html">スタッフ紹介</a></li>
+              <li><a href="price.html">料金表</a></li>
+              <span><li><a href="question.html">よくあるご質問</a></li></span>
+            </ul>
+          </div>
+          <!-- コピーライト -->
+          <p class="copyright">&copy;のこのこ動物病院</p>
+        </footer>
+        <script src="script.js"></script>
+  </body>
+</html>

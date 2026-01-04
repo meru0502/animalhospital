@@ -1,0 +1,1368 @@
+body {
+  background-color: #fffef7;
+  margin: 0;
+  padding: 0;
+  color: #4b2d16;
+} 
+
+/* 全体の幅調整 */
+.base_width {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  height: 65px;
+  background-color: #547443;
+  z-index: 100;
+} 
+
+/* ヘッダーロゴの調整(のこのこ動物病院）*/
+#logo img {
+  width: 300px;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;     
+}
+
+#logo a {
+  text-decoration: none;
+}
+
+/* ナビゲーションメニュー */
+#nav-pc ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.list li {
+  list-style: none;
+  color: #f5f5f5;
+  font-size: 15px;
+  font-weight: 350;
+  padding-right: 25px;
+  padding-top: 5px;
+}
+
+.list a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+.list span {
+  padding-right: 30px;
+}
+
+/* ナビゲーションメニューホバー時 */
+#nav-pc li a {
+  padding-bottom: 3px; /* テキストと下線の間隔 */
+  background-image: linear-gradient(#f5f5f5, #f5f5f5);
+  background-repeat: no-repeat;
+  background-position: bottom right; /* 下線の初期位置 */
+  background-size: 0 1px; /* 下線のサイズ（横幅、高さ） */
+  transition: background-size 0.3s;
+}
+
+#nav-pc li a:hover {
+  background-position: bottom left; /* 下線のホバー時位置 */
+  background-size: 100% 1px; /* 下線の横幅を100%にする */
+}
+
+/* スマホ用ナビゲーション非表示 */
+.nav {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+
+
+
+/* メインビュー */
+#home img {
+  width: 100%;
+}
+
+
+
+/* 各セクションに余白 */
+section {
+  margin-top: 100px;
+}
+
+
+/* 見出し（当院について、診療日のお知らせ、アクセス） */
+.h1 {
+  font-weight: bold;
+  padding: 0.3em 0.5em;
+  border-left: 10px double #624722;
+  color: #4b2d16;
+}
+
+
+
+/* 当院について */
+#explain-flex {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* 画像 */
+#explain-img {
+  width: 50%;
+}
+
+#explain-img img {
+  width: 100%;
+}
+
+/* 文章 */
+.sentence {
+  line-height: 3;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+}
+
+.sentence h3 {
+  font-size: 20px;
+}
+
+.sentence p {
+  text-align: left;
+}
+
+.sentence span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+
+
+/* 診療動物・診療内容について */
+#medical-treatment-flex {
+  display: flex;
+}
+
+/* タイトル */
+.abjuct {
+  margin-left: 220px;
+  margin-right: 150px;
+}
+
+.abjuct {
+  position: relative;
+}
+
+.abjuct::after {
+  position: absolute; /*positionをabsoluteに指定*/
+  content: "";
+  background-color: #624722; /*下線の色*/
+  width: 400px; /*線の幅*/
+  height: 2px; /*線の太さ*/
+  bottom: -10px; /*線のタテ位置*/
+  left: 50%;  /*線のヨコ位置*/
+  transform: translateX(-50%);/*線のヨコ位置*/
+}
+
+
+/* 対象動物 */
+.animal-flex {
+  display: flex;
+  gap: 60px;
+  margin: 20px 0 0 130px;
+}
+
+
+/* 診察内容 */
+#details li {
+  color: #4b2d16;
+  margin-top: 20px;
+  line-height: 2;
+}
+
+#details {
+  margin: 40px 0 0 130px;
+}
+
+
+/* 背景 */
+.back {
+  background-color: #fffffb;
+  background-size:cover; /* 画像のサイズを指定 */
+  padding: 10px 0 30px 0;
+  box-shadow: 
+  1px 1px 8px 1px rgba(0, 0, 0, .14);
+}
+
+
+
+
+
+
+
+/* スタッフ紹介・よくある質問 */
+#else-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 画像調整 */
+.box img {
+  width: 45vh;
+  height: 40vh;
+  filter: brightness(50%);
+}
+
+.box {
+  position: relative;
+}
+
+/* 画像に対する文字調整 */
+.box p {
+  margin: 0;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 30px;
+  color: #f5f5f5;
+  border: solid 1px #f5f5f5;
+  border-radius: 50px;
+}
+
+.box p:hover {
+  background: rgba(48, 47, 47, 0.4);
+  transition: 0.3s;
+}
+
+.box a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+
+
+
+
+
+/* 診療日表の調整 */
+#table-flex {
+  display: flex;
+  gap: 100px;
+}
+
+.table {
+  position: relative;
+  padding: 0 35px;
+  padding-top: 20px;
+}
+
+.table::after {
+  position: absolute; /*positionをabsoluteに指定*/
+  content: "";
+  background-color: #624722; /*下線の色*/
+  width: 385px; /*線の幅*/
+  height: 1.5px; /*線の太さ*/
+  bottom: -5px; /*線のタテ位置*/
+}
+
+th {
+  padding: 5px 10px;
+  color: #4b2d16;
+}
+
+td {
+  padding: 5px 10px;
+  color: #4b2d16;
+}
+
+/* 診療日詳細調整 */
+.time-p {
+  text-align: left;
+  padding-left: 50px;
+  font-size: 15px;
+}
+
+.font-1 {
+  padding-left: 25px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.font-2 {
+  padding-left: 85px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.font-3 {
+  padding-left: 45px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* 診療日背景 */
+.back2 {
+  background-color: #f5f5f5;
+  width: 470px;
+  height: 330px;
+  box-shadow: 
+  1px 1px 8px 1px rgba(0, 0, 0, .14);
+}
+
+/* 説明 */
+.car-font {
+  margin-left: 45px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #f5f5f5;
+  border: solid 1px #53463B;
+  background-color: #53463B;
+  width: 80%;
+}
+
+/* ８台完備 */
+.blank {
+  font-size: 25px;
+  font-weight: 300;
+  color: #f5f5f5;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/* 駐車場画像 */
+#parking-img img{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+/* アクセス */
+iframe {
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+
+
+
+
+
+
+
+/* フッター */
+footer {
+  background-color: #3B1F19;
+}
+
+p {
+  text-align: center;
+}
+
+/* のこのこ動物病院 */
+.footer-logo {
+  padding-top: 20px;
+  color: #f5f5f5;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.footer-br {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* googkemap */
+.footer-logo a {
+  text-decoration: none;
+  color: #fff;
+}
+/* ホバー時 */
+.footer-logo a:hover {
+  opacity: 0.7;
+}
+
+
+/* 診療日・ボタン */
+#table-flex2 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* 予約ボタン */
+.border {
+  border: 0.5px solid #f5f5f5;  
+  color: #f5f5f5;
+  width: 450px;
+  height: 100px;
+  margin-top: 45px;
+  display: flex;             /* 横並び＆中央寄せにする準備 */
+  align-items: center;       /* 縦方向の中央揃え */
+  justify-content: center;   /* 横方向の中央揃え */
+}
+
+.border p {
+  margin: 0;
+  color: #f5f5f5;
+  font-size: 20px;
+  font-weight: 350;
+}
+
+/* ご予約・お問い合わせ */
+.small-p {
+  font-size: 13px;
+  font-weight: 300;
+}
+/* 電話番号 */
+.border .big-p {
+  font-weight: 500;
+}
+
+
+/* フッターメニュー */
+#footer-menu ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+#footer-menu li {
+  list-style: none;
+  margin-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #f5f5f5;
+  font-size: 13px;
+  font-weight: 300;
+  border-right: solid 1px #f5f5f5;
+}
+
+/* フッターメニューホバー時 */
+.footer-nav li a {
+  padding-bottom: 3px; /* テキストと下線の間隔 */
+  background-image: linear-gradient(#f5f5f5, #f5f5f5);
+  background-repeat: no-repeat;
+  background-position: bottom right; /* 下線の初期位置 */
+  background-size: 0 1px; /* 下線のサイズ（横幅、高さ） */
+  transition: background-size 0.3s;
+}
+
+.footer-nav a:hover {
+  background-position: bottom left; /* 下線のホバー時位置 */
+  background-size: 100% 1px; /* 下線の横幅を100%にする */
+}
+
+#footer-menu li.line {
+  border-left: solid 1px #f5f5f5;
+}
+
+/*　コピーライト */
+.copyright {
+  font-size: 12px;
+  color: #f5f5f5;
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+/* 共通タイトル (スタッフ紹介・料金表・よくある質問）*/
+#sub-title {
+ background-image: url(image/slide3.jpeg);
+ opacity: 0.8;
+ height: 30vh;
+ margin-bottom: 100px;
+ position: relative;
+}
+
+#sub-title h2 {
+ margin: 0;
+ color: #f5f5f5;
+ padding: 90px 0 0 100px;
+}
+
+/* パンくずリスト */
+.breadcrumb {
+  position: absolute;
+  top: 230px;
+  left: 100px;
+  font-size: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb li {
+  display: inline-block;
+  color: #4b2d16;
+}
+
+.breadcrumb li+li::before {
+  content: ">";
+  margin: 10px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #4b2d16;
+}
+
+.breadcrumb img {
+  padding-right: 5px;
+  height: 1em;
+  vertical-align: -0.13em;
+}
+
+.breadcrumb a:hover {
+  opacity: 0.7;
+}
+
+
+
+
+/* スタッフ紹介 */
+#vet {
+ display: flex;
+ padding: 30px 0 150px 0;
+}
+
+#vet-img {
+  width: 50%;
+}
+
+#vet-img img {
+ width: 100%;
+}
+
+.name {
+ color: #4b2d16;
+ font-weight: 400;
+ text-align: center;
+}
+
+.career p span{
+ color: #4b2d16;
+ font-weight: 400;
+ font-size: 30px;
+ padding-left: 20px;
+}
+
+.career-list {
+ color: #4b2d16;
+ font-weight: 400;
+ text-align: left;
+ padding-top: 10px;
+}
+
+.career li {
+ color: #4b2d16;
+ font-weight: 400;
+ line-height: 2;
+}
+
+#vet {
+ gap: 100px;
+}
+
+.name {
+  position: relative;
+}
+
+.name::before {
+  position: absolute; /*positionをabsoluteに指定*/
+  content: "";
+  background-color: #624722; /*下線の色*/
+  width: 300px; /*線の幅*/
+  height: 2px; /*線の太さ*/
+  bottom: -10px; /*線のタテ位置*/
+  left: 50%;  /*線のヨコ位置*/
+  transform: translateX(-50%);/*線のヨコ位置*/
+}
+
+
+
+
+
+
+
+
+
+
+/* 料金表 */
+.table-medical {
+  display: flex;
+  gap: 30px;
+}
+
+.before {
+  color: #4b2d16;
+  text-align: left;
+}
+
+.before::before {
+  content: "\25CF";
+  margin-right: 5px;
+}
+
+.table-medical table {
+  border-collapse: collapse;
+  border:1px solid rgb(75, 45, 22,0.4);
+}
+
+.table-medical td {
+  border-collapse: collapse;
+  border:1px solid rgb(75, 45, 22,0.4);
+  width: 230px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#price h3 {
+  color: #4b2d16;
+  position: relative;
+  margin-top: 100px;
+}
+
+#price h3::before {
+  position: absolute; /*positionをabsoluteに指定*/
+  content: "";
+  background-color: #624722; /*下線の色*/
+  width: 100%; /*線の幅*/
+  height: 2px; /*線の太さ*/
+  bottom: -10px; /*線のタテ位置*/
+}
+
+.table-medical-botomm table {
+  border-collapse: collapse;
+  border:1px solid rgb(75, 45, 22,0.4);
+}
+
+.table-medical-botomm td {
+  border-collapse: collapse;
+  border:1px solid rgb(75, 45, 22,0.4);
+  width: 230px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.bottom {
+  margin-bottom: 150px;
+}
+
+
+
+
+
+
+
+/* よくあるご質問 */
+.qa-1 {
+  margin-bottom: 7px;
+  border: 1px solid #4b2d16;
+  border-radius: 5px;
+}
+
+.qa-1 summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1em 2em 1em 3em;
+  color: #4b2d16;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.qa-1 summary::before,
+.qa-1 p::before {
+  position: absolute;
+  left: 1em;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.qa-1 summary::before {
+  color: #5F161D;
+  content: "Q";
+}
+
+.qa-1 summary::after {
+  transform: translateY(-25%) rotate(45deg);
+  width: 7px;
+  height: 7px;
+  margin-left: 10px;
+  border-bottom: 3px solid #4b2d16;
+  border-right: 3px solid #4b2d16;
+  content: '';
+  transition: transform 0.5s ease;
+}
+
+.qa-1[open] summary::after {
+  transform: rotate(225deg);
+}
+
+.qa-1 p {
+  margin: 0;
+  padding: 10px 100px 30px 50px;
+  color: #4b2d16;
+  text-align: left;
+
+}
+
+#qa-bottom {
+  margin-bottom: 150px;
+}
+
+
+
+
+
+/* スマホ版 */
+@media screen and (max-width: 768px)  {
+  
+  
+  /* PC用ナビゲーション非表示 */
+  #nav-pc {
+    display: none;
+  }
+
+  /* スマホ用ナビを表示 */
+  .nav {
+    display: block;
+  }
+
+  .overlay {
+    display: block;
+  }
+
+  /* ヘッダーロゴ（のこのこ動物病院）*/
+  #logo p {
+    color: #f5f5f5;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+    margin-top: 18px;
+  }
+
+  
+  /* ハンバーガーメニュー */
+  .hamburger {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 20px 20px 0 0;
+    z-index: 200;
+  }
+
+  .hamburger span {
+    display: block;
+    height: 1.5px;
+    border-radius: 5px;
+    background: #fffffb;
+    transition: 0.3s;
+  }
+
+
+  /* × に変化するアニメーション */
+  .hamburger.show span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .hamburger.show span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.show span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+
+  /* ナビゲーション */
+  .nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #547443;
+    z-index: 100;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateX(500px);
+    transition: all 0.8s ease;
+  }
+
+  .nav.show {
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateX(50px);
+  }
+
+  .nav ul {
+    padding: 0;
+    margin-top: 70px;
+  }
+
+  .nav li:first-of-type {
+    margin: 0 0 30px 35px;
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .nav li:not(:first-of-type) {
+    list-style: none;
+    border-bottom: 0.5px solid rgba(245, 245, 245, 0.7);
+    margin: 0 80px 0 20px;
+    padding: 20px 0;
+  }
+
+  .nav li:not(:first-of-type):hover {
+    background-color: #5F7454;
+  }
+
+  .nav li:not(:first-of-type)::before {
+    content: "〉";
+    color: #fffffb;
+    margin-right: 10px;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: #fffffb;
+  }
+
+  .nav a:hover {
+    padding-left: 5px;
+  }
+
+
+  /* 背景オーバーレイ */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .overlay.show {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  
+  /* 見出し */
+  .h1 {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  /* 各セクションに余白 */
+  section {
+    margin-top: 30px;
+  }
+  
+
+
+  /* 当院について */
+  #explain-flex {
+    display: block;
+  }
+
+  #explain-img {
+    text-align: center;
+    width: 100%;
+  }
+
+  #explain-img img  {
+    width: 90%;
+  }
+
+
+  .sentence h3 {
+    font-size: 15px;
+    margin: 0 0 10px 20px;
+    color: #4b2d16;
+  }
+      
+  .sentence p {
+    font-size: 11.5px;
+    letter-spacing: normal;
+    line-height: 2em;
+    margin: 0 20px;
+  }
+
+  .span {
+    margin-top: 15px;
+  }
+
+
+  
+
+  /* 診療対象動物・診療内容 */
+  #medical-treatment-flex {
+    display: block;
+  }
+
+  /* h2 */
+  .abjuct h2 {
+    font-size: 20px;
+  }
+
+  .abjuct  {
+    text-align: center;
+    color: #4b2d16;
+    margin: 0;
+  }
+
+  .abjuct::after {
+    position: absolute; /*positionをabsoluteに指定*/
+    content: "";
+    background-color: #624722; /*下線の色*/
+    width: 280px; /*線の幅*/
+    height: 2px; /*線の太さ*/
+    bottom: -10px; /*線のタテ位置*/
+    left: 50%;  /*線のヨコ位置*/
+    transform: translateX(-50%);/*線のヨコ位置*/
+  }
+
+  /* 対象動物 */
+  .animal-flex {
+    gap: 45px;
+    margin: 0;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+
+  .animal-flex:nth-child(3) {
+    margin-bottom: 80px;
+  }
+
+  .animal-flex img {
+    width: 45px;
+  }
+
+  /* 診療内容 */
+  #details {
+    margin-left: 25px;
+  }
+
+  .back {
+    margin: 0 20px;
+  } 
+  
+
+  
+  /* スタッフ紹介・よくある質問 */
+  #else-flex {
+    display: block;
+  }
+
+  .box {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .box img {
+    width: 90%;
+    
+  }
+
+
+
+  /* 診療日のお知らせ */
+  #table-flex {
+    display: block;
+  }
+      
+  /* 診療日表 */
+  .table {
+    padding: 3px 0;
+  }
+
+  th {
+    font-size: 13px;
+  }
+
+  .table th {
+    padding: 8px;
+  }
+
+  .table td {
+    padding: 8px;
+  }
+
+  /* ボーダー */
+  .table::after {
+    width: 95%;
+    margin-left: 8px;
+  }
+
+  /* 詳細 */
+  .time-p {
+    font-size: 13px;
+    padding-left: 15px;
+  }
+
+  .font-1 {
+    font-size: 13px;
+  }
+
+  .font-2 {
+    font-size: 10px;
+  }
+
+  .font-3 {
+    font-size: 13px;
+  }
+
+  .car-font {
+    font-size: 17px;
+    margin-left: 35px;
+  }
+
+  .blank {
+    font-size: 17px;
+    padding: 10px;
+  }
+
+  /* 背景 */
+  .back2  {
+    width: 90%;
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* 駐車場画像 */
+  #parking-img {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #parking-img img {
+    width: 90%;
+  }
+
+  
+
+
+  /* アクセス */
+  iframe {
+    width: 90%;
+  }
+
+  #map {
+    margin-bottom: 50px;
+  }
+
+      
+
+  /* フッター */
+  /* のこのこ動物病院 */
+  .footer-logo {
+    padding: 25px 0 20px 0px;
+    font-size: 20px;
+    margin: 0;
+  }
+
+  /* 住所・goolemap */
+  .footer-br {
+    font-size: 12px;
+  }
+
+  /* 診療日表 */
+  #table-flex2 {
+    display: block;
+  }
+
+  footer .back2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  /* ご予約・お問い合わせボタン */
+  .border {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  
+  /* フッターリンク */
+  #footer-menu li {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .footer-nav {
+    margin: 0;
+    padding: 40px 0 20px 0;
+  }
+
+  /* footer線を消す */
+  #footer-menu li {
+  border-right: none;
+  }
+
+  #footer-menu li.line {
+  border-left: none;
+  }
+
+  /* フッターメニューホバー時変更 */
+  .footer-nav li a {
+    transition: none;
+  }
+
+  /* コピーライト */
+  .copyright {
+    padding: 15px 0;
+    font-size: 10px;
+  }
+
+  
+
+
+
+  /* 共通タイトル */
+  #sub-title {
+    height: 150px;
+    margin-bottom: 0;
+  }
+
+  #sub-title h2 {
+    padding: 55px 0 0 20px;
+    font-size: 20px;
+  }
+
+  /* パンくずリスト */
+  .breadcrumb {
+    position: absolute;
+    top: 155px;
+    left: 10px;
+    font-size: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .breadcrumb li {
+    display: inline-block;
+    color: #4b2d16;
+  }
+
+  .breadcrumb li+li::before {
+    content: ">";
+    margin: 3px;
+  }
+
+  .breadcrumb a {
+    text-decoration: none;
+    color: #4b2d16;
+  }
+
+  .breadcrumb img {
+    padding-right: 2px;
+    height: 1em;
+    vertical-align: -0.13em;
+  }
+
+  .breadcrumb a:hover {
+    opacity: 0.7;
+  }
+
+  
+
+
+
+  /* スタッフ紹介 */
+  #veterinarian {
+    margin-top: 50px;
+  }
+      
+  #vet {
+    display: block;
+    padding-bottom: 50px;
+    padding-top: 0;
+  }
+
+  /* 画像 */
+  #vet-img {
+    text-align: center;
+    width: 100%;
+  }
+
+  #vet-img img {
+    width: 90%;
+  }
+
+  /* 名前 */
+  .career p span {
+    font-size: 25px;
+  }
+
+  /* 経歴 */
+  .career-list {
+    text-align: left;
+    margin-left: 40px;
+  }
+
+  #vet ul {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+
+
+
+
+
+  /* 料金について */
+  #price {
+    margin-top: 50px;
+  }
+
+  /* 項目 */
+  #price h3 {
+    position: relative;
+    font-size: 18px;
+    margin: 50px 20px 0 20px;
+  }
+
+  /* 料金表 */
+  .table-medical {
+    display: block;
+    margin: 0 20px;
+  }
+
+  .table-medical td {
+    font-size: 13px;
+  }
+
+  .before {
+   padding-top: 10px;
+  }
+
+  /* フッターとの余白 */
+  .bottom {
+    margin-bottom: 50px;
+  }
+
+
+
+
+
+
+
+  /* よくある質問 */
+  #qa {
+    margin-top: 50px;    
+  }
+
+  #qa-bottom {
+    margin-top: 50px;    
+  }
+
+  .qa-1 {
+    margin: 0 20px;
+  }
+
+  /* よくあるご質問 */
+  .qa-1 {
+    margin-bottom: 7px;
+    border: 1px solid #4b2d16;
+    border-radius: 5px;
+  }
+
+  /* Q */
+  .qa-1 summary {  
+    font-size: 13px;
+    position: relative; /* 矢印の基準にする */
+  }
+
+  /* A */
+  .qa-1 p {  
+    font-size: 10px;
+    padding: 10px 20px 20px 20px;
+    line-height: 1.5em;
+  }
+
+
+
+.qa-1 summary::after {
+  position: absolute;
+  top: 50%; /* 親要素の高さの中央 */
+  right: 5%;
+  transform: translateY(-50%) rotate(45deg); 
+  width: 5px;
+  height: 5px;
+  margin-left: 10px;
+  border-bottom: 2px solid #4b2d16;
+  border-right: 2px solid #4b2d16;
+  content: '';
+  transition: transform 0.5s ease;
+}
+
+.qa-1[open] summary::after {
+  transform: (225deg);
+}
+
+
+#qa-bottom {
+  margin-bottom: 50px;
+}
+
+  
+
+
+      }

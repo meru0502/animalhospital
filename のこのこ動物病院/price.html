@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>のこのこ動物病院</title>
+    <meta name="descricription" content="那須塩原市にある動物病院です。皆さまの大切なペットたちの健康と幸せを守るために全力でサポートいたします。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <header>
+      <div id="logo"><a href="home.html"><img src="image/logo.png" alt="のこのこ動物病院"></a></div>
+      <!-- PC用ナビゲーション -->
+      <nav id="nav-pc">
+        <ul class="list">
+          <li><a href="home.html">当院について</a></li>
+          <li><a href="staff.html">スタッフ紹介</a></li>
+          <li><a href="price.html">料金表</a></li>
+          <span><li><a href="question.html">よくあるご質問</a></li></span>
+        </ul>
+      </nav> 
+
+     
+     <!-- スマホ用ナビゲーション -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="home.html">のこのこ動物病院</a></li>
+          <li><a href="home.html">当院について</a></li>
+          <li><a href="staff.html">スタッフ紹介</a></li>
+          <li><a href="price.html">料金表</a></li>
+          <li><a href="question.html">よくあるご質問</a></li>
+        </ul>
+      </nav>
+
+      <div class="overlay" id="overlay"></div>
+
+    </header>
+
+    <main>
+      <!-- 料金表 -->
+      <div id="sub-title">
+        <h2>料金表</h2>
+        <!-- パンくずリスト -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">          
+            <li><a href="home.html"><img src="image/breadcrumb-icon.png" alt="TOPアイコン">ホーム</a></li>
+            <li>料金表</li>
+          </ol>
+        </nav>
+      </div>
+      
+      <section id="price">
+        <div class="base_width">
+          <h1 class="h1">料金表</h1>
+          
+          <!-- 診察・検査 -->
+          <h3>診察・検査</h3>
+          <div class="table-medical">
+            <!-- 診察 -->
+            <div>
+              <p class="before">診察</p>
+              <table>
+                <tr>
+                  <td>初診料</td>
+                  <td>2,000円</td>
+                </tr>
+                <tr>
+                  <td>再診料</td>
+                  <td>1,000円</td>
+                </tr>
+              </table>
+            </div>
+            
+            <!-- 検査 -->
+            <div>
+              <p class="before">検査</p>
+              <table>
+                <tr>
+                  <td>フィラリア検査</td>
+                  <td>1,800円</td>
+                </tr>
+                <tr>
+                  <td>レントゲン検査</td>
+                  <td>2,000円</td>
+                </tr>
+                <tr>
+                  <td>血液検査</td>
+                  <td>5,000円～30,000円</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          
+          <!-- ワクチン -->
+          <h3>ワクチン</h3>
+          <div class="table-medical">
+            <!-- 犬用ワクチン -->
+            <div>
+              <p class="before">犬用ワクチン</p>
+              <table>
+                <tr>
+                  <td>6種</td>
+                  <td>6,600円</td>
+                </tr>
+                <tr>
+                  <td>8種</td>
+                  <td>8,800円</td>
+                </tr>
+                <tr>
+                  <td>狂犬病</td>
+                  <td>3,000円</td>
+                </tr>
+              </table>
+            </div>
+            
+            <!-- 猫用ワクチン -->
+            <div>
+              <p class="before">猫用ワクチン</p>
+              <table>
+                <tr>
+                  <td>3種</td>
+                  <td>5,800円</td>
+                </tr>
+                <tr>
+                  <td>5種</td>
+                  <td>7,800円</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          
+          
+          <!-- 外科 -->
+          <h3>外科</h3>
+          <div class="table-medical">
+            <!-- 犬 -->
+            <div>
+              <p class="before">犬</p>
+              <table>
+                <tr>
+                  <td>去勢手術</td>
+                  <td>28,000円～71,000円</td>
+                </tr>
+                <tr>
+                  <td>避妊手術</td>
+                  <td>30,000円～93,000円</td>
+                </tr>
+              </table>
+            </div>
+            
+            <!-- 猫 -->
+            <div>
+              <p class="before">猫</p>
+              <table>
+                <tr>
+                  <td>去勢手術</td>
+                  <td>15,000円～</td>
+                </tr>
+                <tr>
+                  <td>避妊手術</td>
+                  <td>28,000円～</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          
+          
+          <!-- その他 -->
+          <h3>その他</h3>
+          <div class="table-medical">
+            <div class="bottom">
+              <p class="before">時間外料金</p>
+              <table>
+                <tr>
+                  <td>最終受付時間から5分毎</td>
+                  <td>700円</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+      </section>  
+    </main>  
+      
+      <!-- フッター -->
+        <footer>
+          <div><p class="footer-logo">のこのこ動物病院<br><span class="footer-br">〒329-1116 栃木県宇都宮市立伏町宇都宮グリーンタウン</span>
+            <br><a href="https://maps.app.goo.gl/yWrNWB6x3E9Pw4bR8"><span class="footer-br">➤Google map</span></a></p>
+          </div>
+          
+          <!-- 診療日 -->
+          <div id="table-flex2">
+            <div class="back2">
+              <table class="table">
+                <tr>
+                  <th>診療時間</th>
+                  <th>月</th>
+                  <th>火</th>
+                  <th>水</th>
+                  <th>木</th>
+                  <th>金</th>
+                  <th>土</th>
+                  <th>日</th>
+                </tr>
+                
+                <tr>
+                  <th>9:00~11:30</th>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>×</td>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>×</td>
+                </tr>
+                
+                <tr>
+                  <th>15:00~18:30</th>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>×</td>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>○</td>
+                  <td>×</td>
+                </tr>
+              </table>
+              <p class="time-p">診療時間
+              <span class="font-1">9時00分~11時30分/15時00分~18時30分</span><br>
+              <span class="font-2">※午前最終受付11時00分/午後最終受付18時30分</span></p>
+              <p class="time-p">休診日<span class="font-3">水曜日・日曜日</span></p>
+              <p class="car-font">駐車場 <span class="blank">8台</span> 完備</p>
+            </div>
+            <!-- Web予約 -->
+            <div>
+              <div class="border"><p><span class="small-p">ご予約/お問い合わせ</span><br><span class="big-p">080-2212-8358</span></p></div>
+              <div class="border"><p>WEB予約</p></div>
+            </div>
+          </div>
+
+          <!-- フッターメニュー -->
+          <div id="footer-menu">
+            <ul class="footer-nav">
+              <li class="line"><a href="home.html">当院について</a></li>
+              <li><a href="staff.html">スタッフ紹介</a></li>
+              <li><a href="price.html">料金表</a></li>
+              <span><li><a href="question.html">よくあるご質問</a></li></span>
+            </ul>
+          </div>
+          <!-- コピーライト -->
+          <p class="copyright">&copy;のこのこ動物病院</p>
+        </footer>
+        <script src="script.js"></script>     
+  </body>
+</html>
